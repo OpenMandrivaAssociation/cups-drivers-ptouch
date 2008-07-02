@@ -8,6 +8,7 @@ License:	GPL
 Group:		System/Printing
 URL:		http://www.diku.dk/~panic/P-touch/
 Source0:	http://www.diku.dk/~panic/P-touch/%{rname}-driver-%{version}.tar.gz
+Patch0:		ptouch-driver-gcc43_fix.diff
 Requires:	cups
 BuildRequires:	cupsddk
 BuildRequires:	cups-devel
@@ -27,6 +28,7 @@ This package contains CUPS foomatic drivers for the following printers:
 %prep
 
 %setup -q -n %{rname}-driver-%{version}
+%patch0 -p0
 
 %build
 
