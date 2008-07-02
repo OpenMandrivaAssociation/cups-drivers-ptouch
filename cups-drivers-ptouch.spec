@@ -3,7 +3,7 @@
 Summary:	CUPS/foomatic driver for Brother P-touch label printers
 Name:		cups-drivers-%{rname}
 Version:	1.2
-Release:	%mkrel 6
+Release:	%mkrel 7
 License:	GPL
 Group:		System/Printing
 URL:		http://www.diku.dk/~panic/P-touch/
@@ -16,7 +16,7 @@ Conflicts:	cups-drivers = 2007
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
 Conflicts:	foomatic-db < 1:3.0.2-1.20070820.1mdv2008.0
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The ptouch-driver consists of a CUPS raster filter for driving the family of
