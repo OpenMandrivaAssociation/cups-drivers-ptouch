@@ -9,7 +9,7 @@ Group:		System/Printing
 URL:		http://www.diku.dk/~panic/P-touch/
 Source0:	http://www.diku.dk/~panic/P-touch/%{rname}-driver-%{version}.tar.gz
 Requires:	cups
-BuildRequires:	cupsddk
+BuildRequires:	cups
 BuildRequires:	cups-devel
 BuildRequires:	ghostscript
 Conflicts:	cups-drivers = 2007
