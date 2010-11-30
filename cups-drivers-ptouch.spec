@@ -3,7 +3,7 @@
 Summary:	CUPS/foomatic driver for Brother P-touch label printers
 Name:		cups-drivers-%{rname}
 Version:	1.3
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	GPL
 Group:		System/Printing
 URL:		http://www.diku.dk/~panic/P-touch/
