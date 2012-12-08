@@ -3,7 +3,7 @@
 Summary:	CUPS/foomatic driver for Brother P-touch label printers
 Name:		cups-drivers-%{rname}
 Version:	1.3
-Release:	%mkrel 5
+Release:	%mkrel 8
 License:	GPL
 Group:		System/Printing
 URL:		http://www.diku.dk/~panic/P-touch/
@@ -52,3 +52,68 @@ rm -rf %{buildroot}
 %attr(0644,root,root) %{_datadir}/foomatic/db/source/driver/*.xml
 %attr(0644,root,root) %{_datadir}/foomatic/db/source/opt/*.xml
 %attr(0755,root,root) %dir %{_datadir}/cups/model/%{rname}
+
+
+%changelog
+* Tue May 03 2011 Oden Eriksson <oeriksson@mandriva.com> 1.3-5mdv2011.0
++ Revision: 663446
+- mass rebuild
+
+* Tue Nov 30 2010 Oden Eriksson <oeriksson@mandriva.com> 1.3-4mdv2011.0
++ Revision: 603878
+- rebuild
+
+* Sun Mar 14 2010 Oden Eriksson <oeriksson@mandriva.com> 1.3-3mdv2010.1
++ Revision: 518901
+- fix deps
+- rebuild
+
+* Sun Aug 09 2009 Oden Eriksson <oeriksson@mandriva.com> 1.3-2mdv2010.0
++ Revision: 413294
+- rebuild
+
+* Sun Mar 22 2009 Herton Ronaldo Krzesinski <herton@mandriva.com.br> 1.3-1mdv2009.1
++ Revision: 360184
+- Updated to version 1.3
+- Dropped ptouch-driver-gcc43_fix.diff (merged)
+
+* Tue Dec 23 2008 Oden Eriksson <oeriksson@mandriva.com> 1.2-8mdv2009.1
++ Revision: 318081
+- rebuild
+
+* Wed Jul 02 2008 Oden Eriksson <oeriksson@mandriva.com> 1.2-7mdv2009.0
++ Revision: 230683
+- added a gcc43 patch (P0)
+- rebuild
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Fri Jan 11 2008 Thierry Vignaud <tv@mandriva.org> 1.2-5mdv2008.1
++ Revision: 149156
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Thu Aug 30 2007 Marcelo Ricardo Leitner <mrl@mandriva.com> 1.2-4mdv2008.0
++ Revision: 76079
+- Added conflicts to foomatic-db < 1:3.0.2-1.20070820.1mdv2008.0
+
+* Thu Aug 30 2007 Oden Eriksson <oeriksson@mandriva.com> 1.2-3mdv2008.0
++ Revision: 75335
+- fix deps (pixel)
+
+* Thu Aug 16 2007 Oden Eriksson <oeriksson@mandriva.com> 1.2-2mdv2008.0
++ Revision: 64156
+- use the new System/Printing RPM GROUP
+
+* Tue Aug 14 2007 Oden Eriksson <oeriksson@mandriva.com> 1.2-1mdv2008.0
++ Revision: 63010
+- Import cups-drivers-ptouch
+
+
+
+* Mon Aug 13 2007 Oden Eriksson <oeriksson@mandriva.com> 1.2-1mdv2008.0
+- initial Mandriva package
