@@ -8,7 +8,6 @@ License:	GPLv2
 Group:		System/Printing
 URL:		http://www.diku.dk/~panic/P-touch/
 Source0:	http://www.diku.dk/~panic/P-touch/%{rname}-driver-%{version}.tar.gz
-BuildRequires:	cups
 BuildRequires:	cups-devel
 BuildRequires:	ghostscript
 Requires:	cups
@@ -23,7 +22,7 @@ This package contains CUPS foomatic drivers for the following printers:
 %setup -qn %{rname}-driver-%{version}
 
 %build
-%configure2_5x \
+%configure \
 	--libdir=%{_prefix}/lib
 
 %make
