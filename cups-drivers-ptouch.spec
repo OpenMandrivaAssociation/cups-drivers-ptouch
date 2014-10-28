@@ -22,6 +22,7 @@ This package contains CUPS foomatic drivers for the following printers:
 %setup -qn %{rname}-driver-%{version}
 
 %build
+export CC=gcc
 %configure \
 	--libdir=%{_prefix}/lib
 
