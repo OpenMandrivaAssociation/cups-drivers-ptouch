@@ -11,6 +11,7 @@ Source0:	https://github.com/trialinfo/ptouch-driver/archive/refs/tags/v%{version
 BuildRequires:	cups-devel
 BuildRequires:	ghostscript
 BuildRequires:	perl(XML::LibXML)
+BuildRequires:	pkgconfig(libpng)
 Requires:	cups
 
 %description
