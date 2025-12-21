@@ -8,6 +8,11 @@ License:	GPLv2
 Group:		System/Printing
 URL:		https://github.com/trialinfo/ptouch-driver
 Source0:	https://github.com/trialinfo/ptouch-driver/archive/refs/tags/v%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	cups-devel
 BuildRequires:	ghostscript
 BuildRequires:	perl(XML::LibXML)
